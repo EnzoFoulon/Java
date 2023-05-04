@@ -40,8 +40,6 @@ public class Deplacement {
 	public Position getDepart() {
 		return depart;
 	}
-	
-	//vrifie si le dplacement est nul.
 	public boolean isNul(){
 		return deplacementX == 0 && deplacementY == 0;
 	}

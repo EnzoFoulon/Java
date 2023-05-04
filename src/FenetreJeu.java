@@ -136,7 +136,7 @@ public class FenetreJeu extends JFrame {
 
 				while (increment >= -1) {
 					for (int ctr = 0; ctr <= 7; ctr++) {
-						tab[ctr][ligne].setIcon(new ImageIcon(dossierIcone + ordrePiece[ctr] + couleur + ".png"));
+						tab[ctr][ligne].setIcon(new ImageIcon("C:/Users/enzo_/IdeaProjects/Jeux_echec/src/Photo/"+ ordrePiece[ctr] + couleur + ".png"));
 						switch(ordrePiece[ctr])
 						{
 						case 'T':
@@ -160,7 +160,7 @@ public class FenetreJeu extends JFrame {
 						break;
 						}
 						e.getCase(ctr, ligne).setPiece(tempo);
-						tab[ctr][ligne + increment].setIcon(new ImageIcon(dossierIcone + 'P' + couleur + ".png"));
+						tab[ctr][ligne + increment].setIcon(new ImageIcon("C:/Users/enzo_/IdeaProjects/Jeux_echec/src/Photo/" + 'P' + couleur + ".png"));
 						e.getCase(ctr, ligne + increment).setPiece(new Pion(ligne < 5 ? "noir" : "blanc"));
 
 					}
@@ -233,7 +233,7 @@ public class FenetreJeu extends JFrame {
 									temp = null;
 	
 									couleurControle = couleurControle.equals("blanc") ? "noir" : "blanc";
-									champTexte.setText("C'est le tour aux " + couleurControle);
+									champTexte.setText("C'est le tour du joueur " + couleurControle);
 								}
 							}
 							else

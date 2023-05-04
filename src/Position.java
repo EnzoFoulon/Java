@@ -2,29 +2,9 @@ package projetSynthese;
 
 
 public class Position {
-	/**
-	 * Numero de la ligne
-	 */
-	private int ligne; 
-	/**
-	 * Numero de la colonne
-	 */
+	private int ligne;
 	private int colonne; 
 
-	/*
-	 * Le numero de colonne corrspondant  la coordonnes X et le numero de
-	 * ligne  la coordonnes Y, je trouve plus naturel d'inscrire les positions
-	 * avec une notation X,Y. J'ai donc inverser ces deux paramtres.
-	 */
-	/**
-	 * Constructeur de la classe position, sert a initialiser les deux parametre
-	 * d'une position, sa ligne et sa colonne
-	 * 
-	 * @param prend
-	 *            en parametre le numero de colonne de la position
-	 * @param prend
-	 *            en parametre le numero de ligne de la position
-	 */
 	public Position(int colonne, int ligne) {
 		this.ligne = ligne;
 		this.colonne = colonne;
